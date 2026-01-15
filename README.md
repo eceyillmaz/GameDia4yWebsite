@@ -1,49 +1,29 @@
+GameDia4y
+GameDia4y, oyunseverlerin kişisel hesaplar oluşturarak kütüphanelerini yönettikleri, veritabanı tabanlı dinamik bir web uygulamasıdır. Bu proje, ara ödevdeki statik yapının PHP ve MySQL teknolojileri ile genişletilmesiyle geliştirilmiştir.
 
-# GameT4ack
+Teknik Gereksinimler & Teknolojiler
+Sunucu: XAMPP (Apache + MySQL).
+Backend: PHP 8.x 
+Veritabanı: MySQL 
+Frontend: HTML5, CSS,, JavaScript.
+ Özellikler
+Kullanıcı Kayıt ve Giriş Sistemi: session yönetimi ile kişisel hesap oluşturma ve güvenli oturum açma.
+Dinamik Veri Yönetimi: Formlar aracılığıyla veritabanına yeni oyun kayıtları ekleme.
+Kalıcı Arşivleme: Veriler artık localStorage yerine MySQL veritabanında güvenle saklanır.
+Gelişmiş Filtreleme: Arşiv sayfasında oyun ismine göre anlık arama (SELECT ... LIKE).
+İnteraktif Tema: Kullanıcı tercihine göre anlık Koyu/Açık mod geçişi.
+Dosya Yapısı 
 
-GameT4ack, oyunseverlerin oynadıkları veya izledikleri oyunları listeleyebilecekleri, puanlayıp yorum yapabilecekleri ve kendi kişisel arşivlerini oluşturabilecekleri modern bir web uygulamasıdır.
+index.php: Kullanıcıyı karşılayan ana ekran ve navigasyon merkezi.
+login.php / register.php: Kullanıcı giriş ve kayıt arayüzleri.
+islem.php: Formlardan gelen verileri işleyen ve veritabanı sorgularını yöneten motor dosya.
+baglan.php: Veritabanı bağlantı ayarları ve oturum başlatma (db.php).
+archive.php: Veritabanındaki oyunların tablo/kart şeklinde listelendiği sayfa.
+add-game.php: Detaylı oyun ekleme formu (Text, Number, Date inputları içerir).
+🚀 Nasıl Çalıştırılır?
 
-Özellikler
-Popüler Oyun Listesi: Ana sayfada yer alan popüler oyunları tek tıkla listenize ekleyebilirsiniz.
-
-Özel Oyun Ekleme: Listede olmayan oyunları tür, süre ve oynanma durumu bilgileriyle manuel olarak ekleyebilirsiniz.
-
-Puanlama ve Yorumlama: Eklediğiniz oyunlara 10 üzerinden puan verebilir ve kişisel görüşlerinizi yazabilirsiniz.
-
-Kişisel Arşiv: Tüm oyun geçmişinizi kart tasarımıyla "Oyun Arşivim" sekmesinden takip edebilirsiniz.
-
-Koyu/Açık Tema: Tek butonla tema değiştirebilirsiniz.
-
-Kalıcı Veri: Tarayıcıyı kapatsanız bile verileriniz localStorage sayesinde korunur.
-
-Duyarlı (Responsive) Tasarım: Mobil cihazlar ve tabletlerle tam uyumlu arayüz.
-
-Kullanılan Teknolojiler
-HTML: Sayfa yapısı ve semantik içerik için.
-
-CSS: Özel değişkenler (Variables), Flexbox, Grid ve Responsive tasarım için.
-
-JavaScript: Dinamik içerik yönetimi, form kontrolü ve veri işleme için.
-
-Dosya Yapısı
-index.html: Popüler oyunların listelendiği ana sayfa.
-
-add-game.html: Yeni oyun ekleme formu.
-
-games.html: Yorum ve puanlama ekranı.
-
-archive.html: Tüm oyunların kartlar halinde listelendiği arşiv sayfası.
-
-about.html: Proje hakkında bilgilendirme sayfası.
-
-css/style.css: Tüm görsel düzenlemeler ve tema ayarları.
-
-js/games.js: Uygulamanın mantık ve veri kayıt işlemleri.
-
-Nasıl Çalıştırılır?
-Bu projeyi bilgisayarınıza indirin.
-
-Herhangi bir modern web tarayıcısı (Chrome, Edge, Firefox vb.) ile index.html dosyasını açın.
-
-Ekstra bir kurulum veya sunucu gerektirmez.
+XAMPP panelinden Apache ve MySQL servislerini başlatın.
+db_oyunlar.sql dosyasını phpMyAdmin üzerinden içe aktarın.
+Proje klasörünü C:/xampp/htdocs/ içine kopyalayın.
+Tarayıcınızdan localhost/Klasor_Adiniz/login.php adresine giderek giriş yapın.
 
