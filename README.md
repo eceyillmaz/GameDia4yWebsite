@@ -1,4 +1,3 @@
-GameDia4y
 GameDia4y, oyunseverlerin kişisel hesaplar oluşturarak kütüphanelerini yönettikleri, veritabanı tabanlı dinamik bir web uygulamasıdır. Bu proje, ara ödevdeki statik yapının PHP ve MySQL teknolojileri ile genişletilmesiyle geliştirilmiştir.
 
 Teknik Gereksinimler & Teknolojiler
@@ -27,3 +26,4 @@ db_oyunlar.sql dosyasını phpMyAdmin üzerinden içe aktarın.
 Proje klasörünü C:/xampp/htdocs/ içine kopyalayın.
 Tarayıcınızdan localhost/Klasor_Adiniz/login.php adresine giderek giriş yapın.
 
+Geliştirici Ece YILMAZ - Bursa Uludağ Üniversitesi Web Tabanlı Programlama Final Projesi
